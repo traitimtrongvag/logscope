@@ -64,8 +64,8 @@ impl LogAnalyzer {
         sorted
     }
 
-    fn build_stopwords(&self) -> Vec<&str> {
-        vec![
+    fn build_stopwords(&self) -> &[&str] {
+        &[
             "the", "and", "for", "with", "from", "that", "this", "have", "has",
             "been", "was", "were", "are", "will", "would", "could", "should",
         ]
